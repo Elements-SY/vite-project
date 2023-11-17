@@ -1,14 +1,11 @@
 import axios from 'axios'
 import type { AxiosError, AxiosResponse } from 'axios'
 import router from '@/router'
-import { ElMessageBox } from 'element-plus'
-
 enum Msgs {
   '操作成功' = 200,
   '无权操作' = 401,
   '系统内部错误' = 500
 }
-
 // 避免多个接口401弹出多个弹框
 let isRefreshing = false
 

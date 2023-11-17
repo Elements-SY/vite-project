@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-bar">
+  <div class="tags-menu">
 
   </div>
 </template>

@@ -1,9 +1,9 @@
 <template>
-  <div class="footer-bar">
-
+  <div class="breadcrumb">
+    
   </div>
 </template>
-<script setup lang="tsx">
+<script setup lang="ts">
 
 </script>
 <style lang="scss">

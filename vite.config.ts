@@ -65,6 +65,8 @@ export default defineConfig(({ command, mode }) => {
         resolvers: [ElementPlusResolver(), IconsResolver({
           enabledCollections: ['ep'], //@iconify-json/ep 是 Element Plus 的图标库，所以 IconsResolver 配置了 enabledCollections: ['ep']
         })],
+         // 指定自定义组件位置(默认:src/components)
+        // dirs: ["src/**/components"],
         dts: true,
       }),
       Icons({
