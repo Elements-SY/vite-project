@@ -1,5 +1,5 @@
 <template>
-    <div class="container Echarts">
+    <div class="container echarts">
        图表
     </div>
 </template>
