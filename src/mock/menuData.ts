@@ -8,7 +8,7 @@ export const menuList = [
    title: '地图',
    icon: 'map',
    hidden: false,
-   alwaysShow: true,
+   alwaysShow: true, // 为true时就会出现箭头，从而无法点击跳转,作为点击跳转的时候必须设置为false
    roles: ['ADMIN'],
    keepAlive: true,
   },
