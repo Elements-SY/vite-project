@@ -7,4 +7,5 @@
 	unocss、unplugin-auto-import、unplugin-icons、unplugin-svg-component、
 	unplugin-vue-components、vite-plugin-svg-icons、
 	vite-plugin-restart、vite-plugin-compression、vue-tsc
-*/ 
+*/
+

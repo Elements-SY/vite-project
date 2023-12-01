@@ -1,12 +1,15 @@
 <template>
-  <div class="app-main">
-     <nav></nav>
-     <main>
-      <header></header>
-      <section></section>
-      <footer></footer>
-     </main>
-  </div>
+  <section class="app-main">
+        <router-view>
+        <template #default="{ Component, route }">
+          <transition name="fade-slide" mode="out-in">
+            <keep-alive>
+              <component :is="Component" :key="route.fullPath" />
+            </keep-alive>
+          </transition>
+        </template>
+      </router-view>
+  </section>
 </template>
 <script setup lang="ts">
 

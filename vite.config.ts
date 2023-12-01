@@ -89,7 +89,16 @@ export default defineConfig(({ command, mode }) => {
       preserveSymlinks: false,
     },
     // https://cn.vitejs.dev/config/shared-options.html#css-postcss
-    css: {},
+    css: {
+      // CSS 预处理器
+      // preprocessorOptions: {
+      //   // 定义全局 SCSS 变量
+      //   scss: {
+      //     javascriptEnabled: true,
+      //     additionalData: `@use "@/assets/style/variables.module.scss" as *`
+      //   },
+      // },
+    },
     // envDir: "/",
     build: {
       // https://cn.vitejs.dev/config/build-options.html#build-target

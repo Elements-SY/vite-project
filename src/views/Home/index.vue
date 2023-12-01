@@ -1,9 +1,10 @@
 <template>
-  <div class="container">
-   <img style="width: 100px; height: 100px" :src="getImageUrl('image/logo/logo.png')" />
-<el-button type="primary">
-  <IEpSearch />
-  Search</el-button>
+  <div class="container home">
+    <img style="width: 100px; height: 100px" :src="getImageUrl('image/logo/logo.png')" />
+    <el-button type="primary">
+      <IEpSearch />
+      Search
+    </el-button>
   </div>
 </template>
 <script setup lang="ts">
@@ -28,17 +29,16 @@ const state = reactive({
   tableData: [], // 表格数据
   title: { name: '按钮组件' }
 });
-const getImageUrl=(url:string)=>{
-    console.log(url)
-    return new URL(`../../assets/${url}`,import.meta.url).href
+const getImageUrl = (url: string) => {
+  return new URL(`../../assets/${url}`, import.meta.url).href
 }
 /*
   ElementPlus按需引入或者使用CDN，因为该包占体积太大
-*/ 
+*/
 nextTick(() => {
   getTableData();
 });
-function btnClick(){
+function btnClick() {
   console.log(1)
 }
 // 请求数据

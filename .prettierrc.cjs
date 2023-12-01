@@ -1,7 +1,7 @@
 // https://juejin.cn/post/6975442828386107400
 module.exports = {
   // 指定每个缩进级别的空格数
-  tabWidth: 2,
+  tabWidth: 1,
   // 使用制表符而不是空格缩进行
   useTabs: false,
   // 在语句末尾打印分号
@@ -35,4 +35,5 @@ module.exports = {
   vueIndentScriptAndStyle: false,
   // 换行符使用 lf 结尾是 可选值"<auto|lf|crlf|cr>"
   endOfLine: 'lf',
+  singleAttributePerLine: true, // 该选项在 HTML、Vue 和 JSX 中强制执行每行一个属性换行
 };
