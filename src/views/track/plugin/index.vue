@@ -1,6 +1,6 @@
 <template>
-    <div class="container track">
-      埋点
+    <div class="container track-plugin">
+      埋点插件
     </div>
 </template>
 <script setup lang="ts">
